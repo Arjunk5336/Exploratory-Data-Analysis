@@ -42,7 +42,5 @@ plt.xlabel('Pclass',fontweight='bold')
 plt.ylabel('Count',fontweight='bold')
 plt.legend(title='Survived', title_fontsize='13', fontsize='11')
 plt.show()
-fig = px.histogram(df, x='Age', color='Survived', nbins=30,
-                   color_discrete_map={0: 'salmon', 1: 'mediumseagreen'},
-                   title="Age vs Survived")
+fig = px.histogram(df, x='Age', color='Survived', nbins=30,color_discrete_map={0: 'salmon', 1: 'mediumseagreen'},title="Age vs Survived")
 fig.show()
